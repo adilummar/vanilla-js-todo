@@ -61,6 +61,7 @@ form button:hover{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    transition: all 1s ease;
 }
 
 .todo-item{
@@ -75,4 +76,17 @@ form button:hover{
     border: none;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.complete-btn{
+    background: #91b673;
+}
+
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: .5;
 }
