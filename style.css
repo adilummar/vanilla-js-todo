@@ -90,3 +90,39 @@ form button:hover{
     text-decoration: line-through;
     opacity: .5;
 }
+
+.fall{
+    transform:translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select{
+    color: #d88771;
+    width: 9rem;
+    cursor:pointer;
+    padding: 1rem;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background-color: #ff6f47;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+}
