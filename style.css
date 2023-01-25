@@ -126,3 +126,8 @@ select{
     padding: 1rem;
     pointer-events: none;
 }
+
+.select:hover::after{
+    background-color: white;
+    color: #ff6f47;
+}
